@@ -1,6 +1,13 @@
 .App {
+  margin: 20px;
+}
+div {
+  padding: 5px;
+}
+h1 {
   text-align: center;
 }
+
 .page-card {
   display: block;
   border: 1px solid darkslateblue;

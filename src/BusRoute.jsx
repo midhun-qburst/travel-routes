@@ -33,14 +33,14 @@ class BusRoute extends Component {
       
         <div>
           <label>Start:</label>
-          <input type="text" onChange={this.handleStart} />
+          <div><input type="text" onChange={this.handleStart} /></div>
         </div>
         <div>
           <label>Destination:</label>
-          <input type="text" onChange={this.handleDestination} />
+          <div><input type="text" onChange={this.handleDestination} /></div>
         </div>
         <label>Enter the stops( comma separated ):</label>
-        <input type="text" onChange={this.handleStops} />
+        <div><input type="text" onChange={this.handleStops} /></div>
         <div>
         <button onClick={this.handleClick}> Show </button>
         </div>
