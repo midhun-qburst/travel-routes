@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 
+
 class BusRoute extends Component {
   constructor(props) {
     super(props);
@@ -9,8 +10,9 @@ class BusRoute extends Component {
       destination: "Trivandrum",
       stops: []
     };
-    let stopsArray = [];
+    let stopsArray  ;
   }
+   stopsArray = [] ;
   handleStops = event => {
     this.stopsArray = event.target.value.split(",");
   };
