@@ -13,6 +13,10 @@ class BusRoute extends Component {
     let stopsArray  ;
   }
    stopsArray = [] ;
+   refresh = () => {
+    this.setState({ stops: [] });
+    this.stopsArray = [];
+   }
   handleStops = event => {
     this.stopsArray = event.target.value.split(",");
   };
@@ -45,6 +49,8 @@ class BusRoute extends Component {
         <div><input type="text" onChange={this.handleStops} /></div>
         <div>
         <button onClick={this.handleClick}> Show </button>
+        <button onClick={this.refresh}> Refresh </button>
+
         </div>
         <div className="page-card">
           {this.state.stops.map((stop, index, array) => {
